@@ -4,7 +4,8 @@
         <http:listener-connection host="0.0.0.0" port="8081" />
     </http:listener-config>
     <apikit:config name="user-api-config" api="user-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
-    <flow name="user-api-main">
+    <configuration-properties doc:name="Configuration properties" doc:id="a75327dc-49d6-4b56-885a-833b7a3995dc" file="app.properties" />
+	<flow name="user-api-main">
         <http:listener config-ref="user-api-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">
                 <http:headers><![CDATA[#[vars.outboundHeaders default {}]]]></http:headers>
