@@ -57,6 +57,7 @@
 					</execution>
 				</executions>
 			</plugin>
+
 			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>properties-maven-plugin</artifactId> 
 				<version>1.0.0</version> <executions> <execution> <phase>initialize</phase> 
 				<goals> <goal>read-project-properties</goal> </goals> <configuration> <files> 
@@ -97,6 +98,16 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>corp1</id>
+			<name>Corporate Repository</name>
+			<url>scp://repo/maven2</url>
+			<layout>default</layout>
+		</repository>
+
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
