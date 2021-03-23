@@ -35,9 +35,11 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
+						<deploymentType>arm</deploymentType>
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
+						<target>local</target>
 						<applicationName>${name}</applicationName>
 						<environment>${anypoint.environment}</environment>
 						<region>${region}</region>
@@ -49,6 +51,15 @@
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
