@@ -42,7 +42,7 @@
 						<password>${anypoint.password}</password>
 						<target>local</target>
 						<applicationName>user-api</applicationName>
-						<environment>${anypoint.environment}</environment>
+						<environment>Sandbox</environment>
 						<region>${region}</region>
 						<workers>1</workers>
 						<workerType>MICRO</workerType>
