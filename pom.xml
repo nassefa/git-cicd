@@ -35,18 +35,16 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com/</uri>
-						<muleVersion>${app.runtime}</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
-						<applicationName>${project.artifactId}</applicationName>
-						<environment>Sandbox</environment>
-						<workerType>${workerType}</workerType>
-						<workers>1</workers>
-						<objectStoreV2>true</objectStoreV2>
-						<region> ${region} </region>
-					</cloudHubDeployment>
-				</configuration>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>4.2.2</muleVersion>
+                        <username>ITSkills</username>
+                        <password>Skills23</password>
+                        <applicationName>user-api</applicationName>
+                        <environment>Sandbox</environment>
+                        <workerType>MICRO</workerType>
+                        <objectStoreV2>true</objectStoreV2>
+                    </cloudHubDeployment>
+					</configuration>
 				<executions>
 					<execution>
 						<id>deploy</id>
