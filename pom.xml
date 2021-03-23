@@ -40,7 +40,7 @@
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
 						<target>local</target>
-						<applicationName>${name}</applicationName>
+						<applicationName>user-api</applicationName>
 						<environment>${anypoint.environment}</environment>
 						<region>${region}</region>
 						<workers>1</workers>
