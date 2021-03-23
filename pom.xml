@@ -40,7 +40,6 @@
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<target>local</target>
 						<applicationName>user-api</applicationName>
 						<environment>Sandbox</environment>
 						<region>${region}</region>
